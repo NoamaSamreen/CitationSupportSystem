@@ -21,6 +21,9 @@ Route::get('/home', 'HomeController@index');
 Route::get('/courtClerkHome',function(){return view('courtClerkHome');});
 Route::get('/sysAdminHome',function(){return view('sysAdminHome');});
 
+Route::get('/citationsMaster',function(){return view('citationsMaster');});
+Route::get('/viewSummaryGeneric',function(){return view('viewSummaryGeneric');});
+
 Route::get('/editCitation',function(){return view('editCitation');});
 Route::get('/createCitation',function(){return view('createCitation');});
 
