@@ -22,11 +22,14 @@
                         <label for="email" class="col-sm-6 col-form-label">e-mail<input id="email" type="text" class="form-control"/></label>
                     </div>
                     <div class="row">
+                        <label for="lastName" class="col-sm-6 col-form-label">Roles
                         <select>
                             <option>Police Officer</option>
                             <option>Court Personnel</option>
                             <option>System Administrator</option>
                         </select>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,9 @@
 @push('javascript')
 <script type="text/javascript">
     $(document).ready(function () {
+        $('#citationTable').DataTable({
+            scrollable:true
+        });
         $("#date_picker").jqxDateTimeInput({
             formatString: "MM/dd/yyyy",
             showTimeButton:false,
@@ -42,15 +45,16 @@
                         <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSummary">View</a>
                 </div>
                 <div class="panel-body">
-                <div class="row">
-                    @section('table_headers')
+                <div class="row" id="citationTable">
+                    <table id="citationTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
                         <tr>
                             <th>Citation Number</th>
                             <th>Date/Time</th>
                             <th class="no-sort nowrap" style="width: 30px;">Action</th>
                         </tr>
-                    @stop
-                    @section('table_rows')
+                        </thead>
+                   <tbody>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber1"/></td>
                                 <td><?php
@@ -87,8 +91,8 @@
                                 <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSummary">View</a></td>
                             </tr>
 
-                        @stop
-                        @include('layouts.table')
+                        </tbody>
+                        </table>
                 </div>
         </div>
     </div>
