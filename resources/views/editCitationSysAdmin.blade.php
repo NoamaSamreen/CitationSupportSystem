@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="pull-left col-md-5">
                     <a data-toggle="modal" data-target="#flagModal" style="padding:10px; margin:10px;" type="button" class="btn btn-primary">Save</a>
-                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/home">Cancel</a>
+                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/sysAdminHome">Cancel</a>
                 </div>
             </div>
         </div>

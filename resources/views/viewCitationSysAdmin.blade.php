@@ -39,7 +39,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <label for="enterCitation" class="col-form-label">Citation Number<input type="text" id="enterCitation"/></label>
-                        <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a>
+                        <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a>
                 </div>
                 <div class="panel-body">
                 <div class="row">
@@ -56,35 +56,35 @@
                             <td><?php
                                 date_default_timezone_set("America/New_York");
                                 echo  date("m/d/Y h:i:sa");?></td>
-                            <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a></td>
+                            <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a></td>
                         </tr>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber2"/></td>
                                 <td><?php
                                     date_default_timezone_set("America/New_York");
                                     echo  date("m/d/Y h:i:sa");?></td>
-                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a></td>
+                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a></td>
                             </tr>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber3"/></td>
                                 <td><?php
                                     date_default_timezone_set("America/New_York");
                                     echo  date("m/d/Y h:i:sa");?></td>
-                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a></td>
+                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a></td>
                             </tr>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber4"/></td>
                                 <td><?php
                                     date_default_timezone_set("America/New_York");
                                     echo  date("m/d/Y h:i:sa");?></td>
-                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a></td>
+                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a></td>
                             </tr>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber5"/></td>
                                 <td><?php
                                     date_default_timezone_set("America/New_York");
                                     echo  date("m/d/Y h:i:sa");?></td>
-                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewClerk">View</a></td>
+                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSysAdmin">View</a></td>
                             </tr>
                         @stop
                         @include('layouts.table')

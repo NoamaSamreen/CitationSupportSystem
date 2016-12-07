@@ -25,7 +25,7 @@
 @endpush
 @stop
 @section('title')
-    Create Citation
+    Edit Citation
 @endsection
 @section('page')
 <div class="container">
@@ -41,13 +41,13 @@
                         <label for="time_auto" class="col-sm-3 col-form-label">Time<div style="pointer-events: none;" id="time_auto"></div></label>
             </div>
                 <div class="row">
-                        <label for="offender_ID" class="col-sm-6 col-form-label">Offender ID<input id="offender_ID" type="text" class="form-control"/></label>
+                        <label for="offender_ID" class="col-sm-6 col-form-label">Offender ID<input id="offender_ID" type="text" value="TL193789FJ" class="form-control"/></label>
                 </div>
                 <div class="row">
-                        <label for="offenderFirstName" class="col-sm-6 col-form-label">Offender First Name<input id="offenderFirstName" type="text" class="form-control"/></label>
+                        <label for="offenderFirstName" class="col-sm-6 col-form-label">Offender First Name<input id="offenderFirstName" type="text" class="form-control" value="John"/></label>
                 </div>
                 <div class="row">
-                        <label for="offenderLastName" class="col-sm-6 col-form-label">Offender Last Name<input id="offenderLastName" type="text" class="form-control"/></label>
+                        <label for="offenderLastName" class="col-sm-6 col-form-label">Offender Last Name<input id="offenderLastName" type="text" class="form-control" value="Doe"/></label>
                 </div>
                 <div class="row">
                         <label for="DOB" class="col-sm-6 col-form-label">Offender DOB<div id="DOB"></div></label>
@@ -56,8 +56,8 @@
                 </div>
             <div class="row">
                 <div class="pull-left col-md-5">
-                    <a data-toggle="modal" data-target="#flagModal"  style="padding:10px; margin:10px;" type="button" class="btn btn-primary">Create</a>
-                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/home">Cancel</a>
+                    <a data-toggle="modal" data-target="#flagModal" style="padding:10px; margin:10px;" type="button" class="btn btn-primary">Save</a>
+                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/courtClerkHome">Cancel</a>
                 </div>
             </div>
         </div>
@@ -70,11 +70,10 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h3 class="modal-title" id="helpModalLabel">Citation Created Successfully!</h3>
+                    <h3 class="modal-title" id="helpModalLabel">Citation Saved Successfully!</h3>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 @endsection

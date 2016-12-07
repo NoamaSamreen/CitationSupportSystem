@@ -1,4 +1,4 @@
-@extends('layouts.layout_sidebar')
+@extends('layouts.layout_sidebar_courtClerk')
 @section('head')
 @push('javascript')
 <script type="text/javascript">
@@ -13,11 +13,6 @@
             showTimeButton:false,
             showCalendarButton: false
         });
-        $("#DOB").jqxDateTimeInput({
-            formatString: "MM/dd/yyyy",
-            showTimeButton:false,
-            showCalendarButton:true
-        });
     });
     var citaionNumber = Math.floor((Math.random() * 987654321) + 123456789);
     document.getElementById("citationNumber").value=citaionNumber;
@@ -25,7 +20,7 @@
 @endpush
 @stop
 @section('title')
-    Create Citation
+   Citation Summary
 @endsection
 @section('page')
 <div class="container">
@@ -41,23 +36,24 @@
                         <label for="time_auto" class="col-sm-3 col-form-label">Time<div style="pointer-events: none;" id="time_auto"></div></label>
             </div>
                 <div class="row">
-                        <label for="offender_ID" class="col-sm-6 col-form-label">Offender ID<input id="offender_ID" type="text" class="form-control"/></label>
+                        <label for="offender_ID" class="col-sm-6 col-form-label">Offender ID<input style="pointer-events: none;" id="offender_ID" value="TL099123FJ" type="text" class="form-control"/></label>
                 </div>
                 <div class="row">
-                        <label for="offenderFirstName" class="col-sm-6 col-form-label">Offender First Name<input id="offenderFirstName" type="text" class="form-control"/></label>
+                        <label for="offenderFirstName" class="col-sm-6 col-form-label">Offender First Name<input style="pointer-events: none;" value="John" id="offenderFirstName" type="text" class="form-control"/></label>
                 </div>
                 <div class="row">
-                        <label for="offenderLastName" class="col-sm-6 col-form-label">Offender Last Name<input id="offenderLastName" type="text" class="form-control"/></label>
+                        <label for="offenderLastName" class="col-sm-6 col-form-label">Offender Last Name<input style="pointer-events: none;" value="Doe" id="offenderLastName" type="text" class="form-control"/></label>
                 </div>
                 <div class="row">
-                        <label for="DOB" class="col-sm-6 col-form-label">Offender DOB<div id="DOB"></div></label>
+                        <label for="DOB" class="col-sm-6 col-form-label">Offender DOB<input style="pointer-events: none;" value="12/01/1993"/></label>
                 </div>
                     </div>
                 </div>
             <div class="row">
                 <div class="pull-left col-md-5">
-                    <a data-toggle="modal" data-target="#flagModal"  style="padding:10px; margin:10px;" type="button" class="btn btn-primary">Create</a>
-                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/home">Cancel</a>
+                    <a  href="\editCitationSysAdmin" class="btn btn-primary">Edit Citation</a>
+                    <a  data-toggle="modal" data-target="#flagModal" class="btn btn-primary">Close Citation</a>
+                    <a  href="\sysAdminHome" class="btn btn-primary">Cancel</a>
                 </div>
             </div>
         </div>
@@ -70,7 +66,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h3 class="modal-title" id="helpModalLabel">Citation Created Successfully!</h3>
+                    <h3 class="modal-title" id="helpModalLabel">Closing Comments</h3>
+                </div>
+                <div class="modal-body">
+                    <input type="text"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Close Citation</button>
                 </div>
             </div>
         </div>
