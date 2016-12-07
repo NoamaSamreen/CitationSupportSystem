@@ -51,6 +51,7 @@
                 </div>
             <div class="row">
                 <div class="pull-left col-md-5">
+                    <a  href="\editCitationPoliceOfficer" class="btn btn-primary">Edit Citation</a>
                     <a  data-toggle="modal" data-target="#flagModal" class="btn btn-primary">Flag</a>
                 </div>
             </div>

@@ -11,7 +11,7 @@
                     <a href="/viewCitationCourtClerk"><i class = " glyphicon glyphicon-calendar"></i>View Citations</a>
                 </li>
                 <li class="nav-header">
-                    <a href="/courtClerkManual"><i class = " glyphicon glyphicon-calendar"></i>View Manual</a>
+                    <a href="/viewCourtPersonnelManual"><i class = " glyphicon glyphicon-calendar"></i>View Manual</a>
                 </li>
                 <li class="nav-header">
                     <a href="/login"><i class = "glyphicon glyphicon-user"></i>Logout</a>

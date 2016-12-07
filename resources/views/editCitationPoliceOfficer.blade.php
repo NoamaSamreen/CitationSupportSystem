@@ -1,4 +1,4 @@
-@extends('layouts.layout_sidebar_courtClerk')
+@extends('layouts.layout_sidebar')
 @section('head')
 @push('javascript')
 <script type="text/javascript">
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="pull-left col-md-5">
                     <a data-toggle="modal" data-target="#flagModal" style="padding:10px; margin:10px;" type="button" class="btn btn-primary">Save</a>
-                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/courtClerkHome">Cancel</a>
+                    <a style="padding:10px; margin:10px;" class="btn btn-danger" href="/home">Cancel</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h3 class="modal-title" id="helpModalLabel">Citation Saved Successfully!</h3>
+                    </div>
+                <div class="modal-body">
+                    <p>Comments</p>
+                    <input type="text"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Flag</button>
                 </div>
             </div>
         </div>

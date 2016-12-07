@@ -8,10 +8,13 @@
                     <a href="/home"><i class="glyphicon glyphicon-envelope"></i> Home</a>
                 </li>
                 <li class="nav-header">
+                    <a href="/createAccount"><i class="glyphicon glyphicon-envelope"></i>Create Account</a>
+                </li>
+                <li class="nav-header">
                     <a href="/roles"><i class = " glyphicon glyphicon-calendar"></i>Assign Role</a>
                 </li>
                 <li class="nav-header">
-                    <a href="/viewCitationCourtClerk"><i class = " glyphicon glyphicon-calendar">View Citations</i></a>
+                    <a href="/viewCitationCourtClerk"><i class = "glyphicon glyphicon-calendar"></i>View Citations</a>
                 </li>
                 <li class="nav-header">
                     <a href="#" data-toggle="collapse"><i class = "glyphicon glyphicon-briefcase"></i>Update Previleges</a>

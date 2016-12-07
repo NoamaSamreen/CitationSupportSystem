@@ -1,4 +1,4 @@
-@extends('layouts.layout_sidebar')
+@extends('layouts.layout_sidebar_sysAdmin')
 @section('head')
 @push('javascript')
 <script type="text/javascript">

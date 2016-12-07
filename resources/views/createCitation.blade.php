@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     <!-- modal -->
     <div class="modal fade" id="flagModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -75,6 +75,5 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 @endsection

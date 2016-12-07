@@ -51,13 +51,13 @@
                         </tr>
                     @stop
                     @section('table_rows')
-                                <tr>
-                            <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber1"/></td>
-                            <td><?php
-                                date_default_timezone_set("America/New_York");
-                                echo  date("m/d/Y h:i:sa");?></td>
-                            <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSummary">View</a></td>
-                        </tr>
+                            <tr>
+                                <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber1"/></td>
+                                <td><?php
+                                    date_default_timezone_set("America/New_York");
+                                    echo  date("m/d/Y h:i:sa");?></td>
+                                <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSummary">View</a></td>
+                            </tr>
                             <tr>
                                 <td><input style="pointer-events: none; background-color: #f5f8fa" type="text" id="citationNumber2"/></td>
                                 <td><?php
@@ -86,6 +86,7 @@
                                     echo  date("m/d/Y h:i:sa");?></td>
                                 <td> <a style="padding:10px; margin:10px;" type="button" class="btn btn-primary" href="/viewSummary">View</a></td>
                             </tr>
+
                         @stop
                         @include('layouts.table')
                 </div>
